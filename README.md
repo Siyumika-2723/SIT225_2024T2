@@ -1,28 +1,37 @@
-# HC-SR04 Ultrasonic Sensor Data Logger
+# SIT225_2024T2
 
-## Week 2 - IoT Sensor Project
+This repository contains coursework for SIT225 2024 Trimester 2.
+
+## Structure
+
+- `week-1/` - Week 1 materials and assignments
+- `week-2/` - Week 2 materials and assignments
+  - DHT22 Temperature/Humidity Sensor Project
+  - HC-SR04 Ultrasonic Distance Sensor Project
+
+## Week 2 - HC-SR04 Ultrasonic Sensor Data Logger Project
 
 This project demonstrates real-time data logging from an HC-SR04 ultrasonic sensor connected to an Arduino, with data visualization using Python.
 
-## Files Description
+### Files Description
 
 - `hcsr04_logger.py` - Main Python script that reads distance data from Arduino via serial communication and logs it to a CSV file
 - `plot.py` - Python script to visualize the logged distance data over time
 - `hcsr04_data.csv` - CSV file containing timestamped distance measurements
 
-## Hardware Setup
+### Hardware Setup
 
 - Arduino board (Uno/Nano/etc.)
 - HC-SR04 Ultrasonic Sensor
 - USB cable for serial communication
 
-## Software Requirements
+### Software Requirements
 
 ```bash
 pip install pyserial pandas matplotlib
 ```
 
-## Usage
+### Usage
 
 1. **Data Collection**: Run the logger to start collecting data from the sensor
    ```bash
@@ -34,7 +43,7 @@ pip install pyserial pandas matplotlib
    python plot.py
    ```
 
-## Features
+### Features
 
 - Real-time data logging with timestamps
 - Serial communication with Arduino
@@ -42,11 +51,11 @@ pip install pyserial pandas matplotlib
 - Time-series visualization
 - Error handling and graceful shutdown
 
-## Arduino Code
+### Arduino Code
 
 Make sure your Arduino is programmed to send distance readings from the HC-SR04 sensor over serial communication at 9600 baud rate.
 
-## Configuration
+### Configuration
 
 - Default COM port: `COM3`
 - Baud rate: `9600`
